@@ -1,0 +1,39 @@
+footer {
+  background-color: $primary-color;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h3 {
+    color: #FFFFFF;
+
+    @media (max-width: 640px){
+      text-align: center;
+    }
+  }
+  input {
+    border: 1px solid #FFFFFF;
+    background-color: $primary-color;
+    height: 3em;
+  }
+  button {
+
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #000000;
+    text-align: center;
+    border: none;
+    padding: 0.5em 1em;
+    height: 3em;
+
+  }
+
+
+
+
+
+
+
+}
+

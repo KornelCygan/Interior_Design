@@ -1,3 +1,11 @@
 @import 'partials/reset';
 @import 'modules/variables';
 @import 'partials/navbar';
+@import 'partials/footer';
+
+.tmp-section {
+  min-height: 300px;
+  &:nth-of-type(2n){
+    background-color: #999999;
+  }
+}
