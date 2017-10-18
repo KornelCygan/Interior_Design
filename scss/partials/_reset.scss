@@ -1,12 +1,16 @@
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  font-family: 'Open Sans', sans-serif;
+body{
 
-  &:hover,&:active, &:focus{
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+
+    &:hover,&:active, &:focus{
+      text-decoration: none;
+      color: white;
+    }
   }
 }
-
