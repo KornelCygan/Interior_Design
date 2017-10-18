@@ -16,6 +16,9 @@ section.banner {
     @media (min-width:$banner-min-width){
       @if $i == 10 {
         min-height: 2/3 * $banner-min-width - 30;
+      } @else if $i < 5 {
+        min-height: 5/6 * $banner-min-width;
+        $banner-min-width: $banner-min-width + 100;
       } @else {
       min-height: 2/3 * $banner-min-width;
       $banner-min-width: $banner-min-width + 100;
@@ -28,6 +31,7 @@ section.banner {
     max-width: 1200px;
     margin: 0 auto;
     padding-top: 18px;
+
 
     header{
       display: flex;
@@ -44,6 +48,15 @@ section.banner {
     position: fixed;
     right: 15%;
     top: 4%;
+    z-index: 3;
+
+    @media(max-width:1300px){
+      right: 10%;
+    }
+
+    @media(max-width:800px){
+      right: 10%;
+    }
 
     .button-div-line{
       height: 2px;
@@ -164,13 +177,19 @@ section.banner {
     align-items: center;
     margin-top: 12.5%;
 
+    @media (max-width: 630px){
+      margin-top: 20%;
+    }
+
     @media (max-width: 290px){
       flex-direction: column;
     }
 
+
+
     @media (min-width: 768px){
       //transform: rotate(180deg);
-      margin-top: -35%;
+      margin-top: -25%;
       justify-content: space-around;
       position: absolute;
       right: 110%;
