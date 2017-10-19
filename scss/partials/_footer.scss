@@ -38,103 +38,129 @@ footer {
   background-color: #0f0f0f;
   min-height: 300px;
 
-  .adorning-logo{
+  .adorning-logo {
 
-  h2{
-    font-family: 'Ubuntu', sans-serif;
-    position: relative;
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 1;
-    padding: 0 .67em;
-    transition: font-size 0.5s ;
+    h2 {
+      font-family: 'Ubuntu', sans-serif;
+      position: relative;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 1;
+      padding: 0 .67em;
+      transition: font-size 0.5s;
 
-    /*najpierw media ponizej 600px, wszystko w logo jest na jednostkach em wiec wystarczy zmieniac font-size u glownego rodzica */
-    @media (max-width: 600px){
-    font-size: 36px;
-  }
-
-    @media (max-width: 480px){
-    font-size: 32px;
-  }
-
-    @media (max-width: 380px){
-    font-size: 28px;
-  }
-
-    /*media powyzej 768px*/
-    @media (min-width: 768px){
-    font-size: 47px;
-  }
-
-    @media (min-width: 1200px){
-    font-size: 54px;
-  }
-
-    &::before{
-    content: "";
-    width: .55em;
-    height:1em;
-    border: 3px solid $secondary-color;
-    position: absolute;
-    top:0.15em;
-    left:0;
-
-    @media (min-width: 768px){
-      border: 5px solid $secondary-color;
-    }
-
-  }
-
-    a{
-    font-family: 'Ubuntu', sans-serif;
-  }
-
-    span{
-    font-family: 'Ubuntu', sans-serif;
-    display: block;
-    font-size: .3em;
-    line-height: 0.1;
-    color: $secondary-color;
-
-    /*zeby span nie nachodzil na a przy najmniejszych wymiarach*/
-    @media (max-width: 480px){
-      line-height: 0.3;
-    }
-
-    @media (min-width: 768px){
-      line-height:0.2;
-    }
-  }
-  }
-}
-
-  .container {
-    div:nth-of-type(2){
-      color: #FFFFFF;
-
-      span{
-        font-size: 3em;
+      /*najpierw media ponizej 600px, wszystko w logo jest na jednostkach em wiec wystarczy zmieniac font-size u glownego rodzica */
+      @media (max-width: 600px) {
+        font-size: 36px;
       }
-    }
-    div:nth-of-type(3){
-      ul {
-        list-style: none;
-        li{
-          padding:0.7em;
-          a{
-            color: #FFFFFF;
-            text-transform: uppercase;
-          }
+
+      @media (max-width: 480px) {
+        font-size: 32px;
+      }
+
+      @media (max-width: 380px) {
+        font-size: 28px;
+      }
+
+      /*media powyzej 768px*/
+      @media (min-width: 768px) {
+        font-size: 47px;
+      }
+
+      @media (min-width: 1200px) {
+        font-size: 54px;
+      }
+
+      &::before {
+        content: "";
+        width: .55em;
+        height: 1em;
+        border: 3px solid $secondary-color;
+        position: absolute;
+        top: 0.15em;
+        left: 0;
+
+        @media (min-width: 768px) {
+          border: 5px solid $secondary-color;
+        }
+
+      }
+
+      a {
+        font-family: 'Ubuntu', sans-serif;
+      }
+
+      span {
+        font-family: 'Ubuntu', sans-serif;
+        display: block;
+        font-size: .3em;
+        line-height: 0.1;
+        color: $secondary-color;
+
+        /*zeby span nie nachodzil na a przy najmniejszych wymiarach*/
+        @media (max-width: 480px) {
+          line-height: 0.3;
+        }
+
+        @media (min-width: 768px) {
+          line-height: 0.2;
         }
       }
     }
-    div:nth-of-type(4){
-
-    }
   }
 
-}
+
+    .footer {
+
+      div:nth-of-type(2) {
+        color: #FFFFFF;
+
+        span {
+          font-size: 3em;
+        }
+      }
+      div:nth-of-type(3) {
+        ul {
+          list-style: none;
+          li {
+            a {
+              color: #FFFFFF;
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+      .footer_boxes {
+        border: 1px solid red;
+        display: flex;
+        flex-wrap: wrap;
+        width: 25%;
+
+        @media (max-width: 480px) {
+          width: 100%;
+        }
+
+        @media (max-width: 991px) {
+          width: 50%;
+        }
+
+        @media (max-width: 1024px) {
+          width: 25%;
+        }
+
+        div {
+          width: 50%;
+          img {
+            max-width: 100%;
+            height: auto;
+          }
+
+        }
+      }
+    }
+
+  }
+
 
 
 
