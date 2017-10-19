@@ -47,6 +47,14 @@
 
     a{
       font-family: 'Ubuntu', sans-serif;
+      text-decoration: none;
+      color: white;
+
+      &:hover,&:active,&:focus,&:visited{
+        text-decoration: none;
+        outline: none;
+        color: white;
+      }
     }
 
     span{

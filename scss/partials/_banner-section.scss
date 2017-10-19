@@ -50,6 +50,7 @@ section.banner {
     justify-content: center;
     align-items: center;
     margin-top: 12.5%;
+    color: white;
 
     @media (max-width: 630px){
       margin-top: 20%;
@@ -99,7 +100,7 @@ section.banner {
 
   .banner-info {
     text-align: center;
-
+    color: white;
 
     @media(min-width: 768px){
       margin-top: 31.5%;
@@ -178,6 +179,8 @@ section.banner {
 
     >a{
       display: inline-block;
+      color: white;
+      text-decoration: none;
       margin:2vw auto 60px auto;
       text-transform: uppercase;
       font-size: 14px;
@@ -188,6 +191,13 @@ section.banner {
       border: 2px solid #fff; //musza byc co najmniej 2 px - przy zmniejszaniu widac zielona poswiate tla??
       position: relative;
       overflow: hidden;
+
+      &:hover,&:active,&:focus,&:visited{
+        text-decoration: none;
+        outline: none;
+        color: white;
+      }
+
 
       span{
         position: relative;
