@@ -1,8 +1,11 @@
 @import 'partials/reset';
 @import 'modules/variables';
 @import 'partials/navbar';
+@import 'partials/nav-bar-button';
+@import 'partials/adorning_logo';
 @import 'partials/banner-section';
 @import 'partials/footer';
+@import "partials/events-section";
 
 .tmp-section {
   min-height: 300px;
