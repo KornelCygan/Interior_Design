@@ -56,6 +56,10 @@ section.banner {
       margin-top: 20%;
     }
 
+    @media (max-width: 630px){
+      margin-top: 20%;
+    }
+
     @media (max-width: 290px){
       flex-direction: column;
     }
@@ -179,6 +183,7 @@ section.banner {
 
     >a{
       display: inline-block;
+
       color: white;
       text-decoration: none;
       margin:2vw auto 60px auto;
@@ -192,12 +197,12 @@ section.banner {
       position: relative;
       overflow: hidden;
 
+
       &:hover,&:active,&:focus,&:visited{
         text-decoration: none;
         outline: none;
         color: white;
       }
-
 
       span{
         position: relative;
