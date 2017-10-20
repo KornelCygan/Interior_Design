@@ -1,0 +1,47 @@
+section.boxes {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  .row {
+    height: 616px;
+  }
+
+
+
+  .sofa_photo {
+    background: url("../images/3.jpg") no-repeat center;
+    background-size: cover;
+    height: 616px;
+  }
+
+  .enterprise,
+  .wining,
+  .price,
+  .consultation {
+    border: 1px solid ghostwhite;
+    height: 50%;
+    text-align: center;
+
+    p{
+      font-size: 22px;
+      font-weight: bold;
+      color: black;
+      text-transform: uppercase;
+    }
+    span{
+      color: grey;
+    }
+
+  }
+  .enterprise{
+    p {
+      ::before {
+        content: "fa fa-table";
+      }
+    }
+
+
+  }
+
+}
