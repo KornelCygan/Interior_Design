@@ -22,26 +22,79 @@ section.boxes {
     border: 1px solid ghostwhite;
     height: 50%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 
     p{
-      font-size: 22px;
+      font-size: 24px;
       font-weight: bold;
       color: black;
       text-transform: uppercase;
-    }
-    span{
-      color: grey;
-    }
+      padding-top: 20px;
 
-  }
-  .enterprise{
-    p {
-      ::before {
-        content: "fa fa-table";
+      &::before {
+        font-family: 'FontAwesome';
+        font-size: 40px;
+        color: white;
+        display: block;
+        position: relative;
+        z-index: 1;
+        padding-bottom: 20px;
+        font-weight: 500;
+      }
+
+      &::after{
+        content: "";
+        display: inline-block;
+        background: $primary-color;
+        height:2px;
+        width: 50%;
+        margin-bottom: 10px;
+
       }
     }
 
+    span{
+      color: grey;
+      padding-top: 10px;
+    }
 
   }
 
+  .enterprise{
+    p::before {
+      content: '\f0ce';
+      }
+  }
+
+
+  .wining{
+    p::before {
+        content: '\f091';
+      }
+  }
+
+  .price {
+    p::before {
+        content: '\f157';
+      }
+  }
+
+  .consultation{
+    p::before {
+        content: '\f007';
+      }
+  }
+
+  .circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: $primary-color;
+    position: absolute;
+    top: 40px;
+  }
 }
