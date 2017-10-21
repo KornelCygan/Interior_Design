@@ -11,7 +11,7 @@ section.boxes {
 
   .sofa_photo {
     background: url("../images/3.jpg") no-repeat center;
-    background-size: cover;
+    background-size: contain;
     height: 616px;
   }
 
@@ -90,11 +90,11 @@ section.boxes {
   }
 
   .circle {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     background-color: $primary-color;
     position: absolute;
-    top: 40px;
+    top: 55px;
   }
 }
