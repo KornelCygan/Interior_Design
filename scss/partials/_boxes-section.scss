@@ -1,0 +1,100 @@
+section.boxes {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  .row {
+    height: 616px;
+  }
+
+
+
+  .sofa_photo {
+    background: url("../images/3.jpg") no-repeat center;
+    background-size: contain;
+    height: 616px;
+  }
+
+  .enterprise,
+  .wining,
+  .price,
+  .consultation {
+    border: 1px solid ghostwhite;
+    height: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    p{
+      font-size: 24px;
+      font-weight: bold;
+      color: black;
+      text-transform: uppercase;
+      padding-top: 20px;
+
+      &::before {
+        font-family: 'FontAwesome';
+        font-size: 40px;
+        color: white;
+        display: block;
+        position: relative;
+        z-index: 1;
+        padding-bottom: 20px;
+        font-weight: 500;
+      }
+
+      &::after{
+        content: "";
+        display: inline-block;
+        background: $primary-color;
+        height:2px;
+        width: 50%;
+        margin-bottom: 10px;
+
+      }
+    }
+
+    span{
+      color: grey;
+      padding-top: 10px;
+    }
+
+  }
+
+  .enterprise{
+    p::before {
+      content: '\f0ce';
+      }
+  }
+
+
+  .wining{
+    p::before {
+        content: '\f091';
+      }
+  }
+
+  .price {
+    p::before {
+        content: '\f157';
+      }
+  }
+
+  .consultation{
+    p::before {
+        content: '\f007';
+      }
+  }
+
+  .circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: $primary-color;
+    position: absolute;
+    top: 55px;
+  }
+}
